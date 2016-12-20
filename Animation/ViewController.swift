@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBAction func tapped(_ sender: Any) {
         tap.isHidden = true
         
-        UIView.animate(withDuration: 1, delay: 0, options: [], animations: {
+        UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: [], animations: {
             [unowned self] in
             switch self.currentAnimation {
               case 0:
